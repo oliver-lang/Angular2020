@@ -1,7 +1,7 @@
 <i>shopping-list</i>
 <div class="row">
     <div class="col-xs-10">
-        <app-shopping-edit></app-shopping-edit>
+        <app-shopping-edit (toAdd)="toAdd($event)"></app-shopping-edit>
         <hr>
 
         <ul class="list-group">
@@ -9,7 +9,6 @@
                 {{ ingredient.name }} ({{ ingredient.amount }})
             </a>
         </ul>
-
 
     </div>
     <div class="col-xs-2">
